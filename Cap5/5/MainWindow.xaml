@@ -1,0 +1,41 @@
+﻿<Window
+        x:Class="Cap4_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cap4_5"
+        mc:Ignorable="d"
+        Title="Numero a palabras"
+        SizeToContent="WidthAndHeight">
+    <Grid Margin="20, 10">
+        <StackPanel Orientation="Vertical">
+            <!-- <Grid> -->
+            <StackPanel Orientation="Vertical">
+                <Label
+                        FontSize="18"
+                        HorizontalAlignment="Center">Ingrese un numero: </Label>
+                <TextBox
+                        x:Name="BaseTextBox"
+                        Height="30"
+                        FontSize="18"
+                        HorizontalAlignment="Stretch" />
+
+            </StackPanel>
+            <Button
+                    x:Name="CalculateBtn"
+                    Click="OnCalculateClick"
+                    Padding="5"
+                    Width="Auto"
+                    Margin="0,10,0,0"
+                    HorizontalAlignment="Stretch">Convertir</Button>
+            <TextBlock
+                    Margin="0,15,0,0"
+                    x:Name="ResultTextBlock"
+                    FontSize="24"
+                    Width="300px"
+                    TextWrapping="WrapWithOverflow"
+                    HorizontalAlignment="Center" />
+        </StackPanel>
+    </Grid>
+</Window>
